@@ -1,0 +1,145 @@
+/* hides the secret third image carousel */
+.carousel-hidden {
+  display: none;
+}
+
+/*
+  Flickity specific CSS (copied from the Flickity
+  web site) referencing flickity.min.css
+*/
+
+.carousel-cell {
+  overflow: hidden;
+}
+
+.carousel-cell img {
+  display: block;
+  height: 200px;
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-cell img {
+    height: 400px;
+  }
+}
+
+/* fade in lazy loaded image */
+.carousel-cell-image.flickity-lazyloaded,
+.carousel-cell-image.flickity-lazyerror {
+  opacity: 1;
+}
+
+/*
+  Custom CSS using W3Schools Recommendations / Tryit Editor)
+*/
+* {
+  box-sizing: border-box;
+}
+
+/* 
+  Palatino works in CodePen so I'm hoping it works
+  on the web but if not there's still the fallback fonts
+*/
+body {
+  font-family: Palatino, Arial, Helvetica, Sans-Serif;
+  background-color: #e7d3ef;
+}
+
+.title {
+  font-size: 60px;
+  margin-bottom: -12px;
+}
+
+.information {
+  margin-left: 22%;
+  margin-right: 22%;
+}
+
+h1,h2,p {
+  text-align: center;
+}
+
+/* Indent for paragraphs describing dresses */
+p.l {
+  text-align: left;
+  margin-left: 20%;
+}
+
+.heroImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  width: 70%;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 17%;
+
+}
+
+/* Creates an image and text that float next to each other for the dress descriptions */
+.indent {
+  width: 10%;
+}
+
+#imageSelection {
+  float: left;
+  max-width: 100%;
+  height: auto;
+}
+
+.leftMargin {
+  margin-left: 2%;
+  width: 50%;
+}
+
+.imageText {
+  margin-left: 4%;
+  float: left;
+  width: 40%;
+  padding: 10px;
+  display: none;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  margin-top: 8%;
+}
+
+/* Responsive layout stuff
+  Makes the image and text stack on top of each other
+  instead of next to each other when screen shrinks
+  */
+@media screen and (max-width: 750px) {
+  .imageText {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .leftMargin {
+    width: 100%;
+  }
+}
+
+/*
+  Ensures images of dresses don't get too big
+  */
+@media screen and (min-width: 1100px) {
+  #imageSelection {
+    max-width: 600px;
+    height: auto;
+  }
+}

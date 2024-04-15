@@ -1,0 +1,415 @@
+<!doctype html>
+<!--
+  References:
+    https://flickity.metafizzy.co/
+    https://www.w3schools.com/html/html_layout.asp
+    https://www.w3schools.com/howto/howto_css_two_columns.asp
+-->
+
+<html lang="en">
+
+<head>
+  <!-- Required meta tags (viewport for proper responsive behaviors)-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Taylor Annart</title>
+
+  <!-- Flickity CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome Font and Icon Toolkit -->
+  <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+</head>
+
+<body>
+
+  <h1 class="title">Taylor Annart</h1>
+  <h2><i>Textile Artist</i></h2>
+
+  <!-- Artist Hero Image -->
+  <img
+    src="https://images.squarespace-cdn.com/content/v1/5f8a41989cd0a72ebbacf86a/1608602885345-RZOCTLAAIO42MOAKGL48/20160625_Pine-Rose-Cabins-Wedding-Taylor-Chris_01334.jpg"
+    alt="Artist Hero Image" class="heroImage">
+
+  <br><br>
+  <p class="information">Taylor Annart is an artist who uses bridal wear as her canvas and believes that nothing is more
+    beautiful than showing your true colours.
+    She creates each of her works so that you can feel like a bride without giving up on feeling like yourself.
+    <br><br>
+    Making art for a living was a lifelong goal of Taylors and after years of attempts and failures,
+    getting engaged was what became the moment that launched her art career. So far unable to make it as an artist
+    full-time,
+    Taylor switched her efforts to pouring out her soul and creativity into her wedding day.
+    As someone who wears their heart on their sleeve, and sees the world with 100x saturation,
+    Taylor added colour to her hair, her dress, and speckled it all over the venue with handmade flowers and
+    centerpieces.
+    Bridal but colourful, traditional yet unique, bold but elegant, the dyed wedding dress made a perfect fit for her.
+    <br><br>
+    Post wedding and low on savings, Taylor was running out of hope for her art career.
+    She considered selling her wedding dress, but then thought who would buy a painted dress? It was September 4th,
+    2016,
+    when suddenly a UK gossip blog posted a picture of Taylor in her painted dress and skyrocketed into viral wedding
+    madness.
+    Some loved it, some hated it, and hundreds searched for Taylor to become clients. All she could say was yes.
+    <br><br>
+    Since then, Taylors life has taken quite a few twists and turns, but her business <i>Canvas Bridal</i> has stayed
+    and evolved with her.
+    From married to divorced, from city to city, and from custom pieces to up-cycling one of a kind gowns.
+  </p>
+
+  <br><br>
+  <hr>
+  <!-- Logo -->
+  <img src="https://static1.squarespace.com/static/5f8a41989cd0a72ebbacf86a/t/65fa16e33bdfee5eaaeb3db7/1711588929362/"
+    alt="Canvas Bridal" class="logo">
+  <h1>Works</h1><br>
+
+  <!-- Flickity carousel HTML for the first carousels images -->
+  <div class="carousel">
+
+    <div class="carousel-cell">
+      <img
+        src="https://images.squarespace-cdn.com/content/v1/5f8a41989cd0a72ebbacf86a/1709767013121-JACNET3FZMPCX42HZK77/non-tradional-ombre-dip-dye-wedding-dress-colorful.jpg"
+        alt="Esther" onclick="currentSlide(1, this)" />
+    </div>
+
+    <div class="carousel-cell">
+      <img
+        src="https://images.squarespace-cdn.com/content/v1/5f8a41989cd0a72ebbacf86a/1651686227037-BYTKZQJTF0RBVY357T3S/beach-wedding-dress-unique-colorful-bride-handpainted.jpg"
+        alt="Water Lily" onclick="currentSlide(2, this)" />
+    </div>
+
+    <div class="carousel-cell">
+      <img
+        src="https://images.squarespace-cdn.com/content/v1/5f8a41989cd0a72ebbacf86a/1687884688127-SFD6RPVQOPMF2RF8T1R3/sunset-boho-wedding-dress-lace-ombre-painted-bridal-taylorannart-cover.jpg"
+        alt="Trance" onclick="currentSlide(3, this)" />
+    </div>
+
+    <div class="carousel-cell">
+      <img
+        src="https://images.squarespace-cdn.com/content/v1/5f8a41989cd0a72ebbacf86a/c883dc78-1f06-4af8-9fbc-533381cd0dc3/teal-aqua-marine-ultra-marine-wedding-dress-ombre.jpg"
+        alt="Marine" onclick="currentSlide(4, this)" />
+    </div>
+
+    <div class="carousel-cell">
+      <img
+        src="https://images.squarespace-cdn.com/content/v1/5f8a41989cd0a72ebbacf86a/1677106315396-LYHGRLRKGI5G7LYD1MDK/sunset-bridal-gown-design-viral-girl-on-fire.jpg"
+        alt="Scorch" onclick="currentSlide(5, this)" />
+    </div>
+
+    <div class="carousel-cell">
+      <img
+        src="https://images.squarespace-cdn.com/content/v1/5f8a41989cd0a72ebbacf86a/1678134407297-W8F2KKOG3T7XU3A7J4M8/organza-teired-bridal-skirt-blue-gold-rainbow.jpg"
+        alt="Abalone" onclick="currentSlide(6, this)" />
+    </div>
+
+    <div class="carousel-cell">
+      <img
+        src="https://images.squarespace-cdn.com/content/v1/5f8a41989cd0a72ebbacf86a/1677088819229-PJARBELEO7342SW6OOTZ/canvas-bridal-gown-paradise-tropical-colorful-wedding.jpg"
+        alt="Paradise" onclick="currentSlide(7, this)" />
+    </div>
+
+    <div class="carousel-cell">
+      <img
+        src="https://images.squarespace-cdn.com/content/v1/5f8a41989cd0a72ebbacf86a/1671147134506-6I3BIOH2URJKCYSVL2CU/ombre-rainbow-wedding-dress-glitter-fairy-bride.jpg"
+        alt="Fairy Dust" onclick="currentSlide(8, this)" />
+    </div>
+
+  </div>
+
+  <!-- Two Column Layout for the description text to display next to each image -->
+  <br><br><br>
+  <div class="row">
+    <div class="leftMargin">
+      <img id="imageSelection" src="" alt="" />
+    </div>
+    <div class="imageText">
+      <h1>Esther</h1>
+      <p><i>Bust 36” Waist 28” Hip 38.5” Waist to Floor 46”</i></p>
+      <hr>
+      <p>With sunset colours: purple, red, orange, and yellow; this painted lace almost glows, mimicking the sun that
+        just slips behind the horizon line at sunset.</p>
+      <hr>
+      <p class="l">Features:<br><br>• Hand Painted Lace<br><br>• Illusion Back<br><br>• Beaded Straps<br><br>• Beaded
+        Applique on Lace<br><br>• Lightly Structured Bodice</p>
+    </div>
+
+    <div class="imageText">
+      <h1>Water Lily</h1>
+      <p><i>Bust 33-34” Waist 26-27” Hip 36-37” Waist to Floor 47”</i></p>
+      <hr>
+      <p>This started as an experiment. Taylor sought to create 3D details that could be painted on to enhance the lace,
+        and the results were better than she had hoped. The paint and additive mix turned out to be thick, strong, and
+        flexible. She envisioned this effortless, easy-to-move-in dress for an adventurous bride. Coloured with deep
+        green, aqua, and teal ombre, then hand-painted florals, like a lake speckled with pink flowers floating on top.
+        This is a wedding dress you can live in, swim in, hike, ski, and have fun in, and the dark ombre will hide all
+        the mess you pick up along the way.</p>
+      <hr>
+      <p class="l">Features:<br><br>• Stretch Fit<br><br>• Hidden Zipper<br><br>• No Cups or Boning<br><br>• Durable &
+        Light Weight<br><br>• 3D Hand Painted Florals</p>
+    </div>
+
+    <div class="imageText">
+      <h1>Trance</h1>
+      <p><i>Bust 41” Waist 33” Hip 44” Waist to Floor 46”</i></p>
+      <hr>
+      <p>The instant she saw this dress, Taylor knew she wanted to give that show-stopping lace hem an extra punch of
+        detail. Inspired by Mandala dot paintings, she started with a vintage/muted sunset ombre colouring then dotted a
+        slightly 3D Teal paint on each diamond and around the whole gown. Lastly, to tie this to the top she added dot
+        lace to the straps.</p>
+      <hr>
+      <p class="l">Features:<br><br>• Teal Painted Lace Highlights<br><br>• Chiffon Crisscross Bow Back<br><br>• Vintage
+        Sunset Ombre</p>
+    </div>
+
+    <div class="imageText">
+      <h1>Marine</h1>
+      <p><i>Bust 41” Waist 33” Hip 44” Waist to Floor 46”</i></p>
+      <hr>
+      <p>A lover of chiffon skirts so flowy, paired with the illusion lace top; Taylor knew this had to be an
+        ocean-themed gown. Teal, Aqua, and Deep Blue Ombre. Extra smooth; one of the smoothest gradients she's done.
+        It’s perfect. She then hand-beaded the lace top. This was to hide the cups better while adding glam. Pearls, of
+        course, and teal glass beads that reminded Taylor of sea glass. Lastly, she saw the opportunity to use this
+        fantastic handmade glass bridal button; it’s stunning and the perfect addition to this gown’s keyhole back.</p>
+      <hr>
+      <p class="l">Features:<br><br>• Teal Beadwork<br><br>• Glass Handmade Bridal Button<br><br>• Removeable Cups</p>
+    </div>
+
+    <div class="imageText">
+      <h1>Scorch</h1>
+      <p><i>Bust 43” Waist 35” Hip 46” Waist to Floor 46”</i></p>
+      <hr>
+      <p>This is Taylor's famous signature sunset colouring with the heat turned up. Fiery glowing yellow and orange
+        colors bleed into a crimson red, then a vibrant purple and deep navy blue. Adorned with beadwork and sequins
+        that catch the light, Scorch is both elegant and edgy. Illusion button back, sexy sweetheart neckline, lined
+        with beads, and built fully structured, this original Maggie Sorttero gown is a timeless classic paired with
+        show-stopping colors.</p>
+      <hr>
+      <p class="l">Features:<br><br>• Beads and Sequins<br><br>• Pearl Button Back<br><br>• Wide Shoulder Straps</p>
+    </div>
+
+    <div class="imageText">
+      <h1>Abalone</h1>
+      <p><i>Bust 35” Waist 26” Hip 37” Waist to Floor 45”</i></p>
+      <hr>
+      <p>Taylor saw the layers of this dress falling like waves on the beach, and it got her dreaming of seashells and
+        mermaid vibes. She took the colors from an abalone shell, the pastel color incidence, and glitter shine, and
+        then followed that with the gold on the crushed organza to mimic the sand and blues on the smooth organza to
+        mimic the ocean.</p>
+      <hr>
+      <p class="l">Features:<br><br>• 2 Types of Organza Layers<br><br>• Covered in Glitter<br><br>• Each Layer is
+        Unique</p>
+    </div>
+
+    <div class="imageText">
+      <h1>Paradise</h1>
+      <p><i>Bust 39” Waist 31” Hip 42” Waist to Floor 46”</i></p>
+      <hr>
+      <p>Taylor painted this dress a vibrant tropical color scheme to match the fun and bold lace pattern. A lilac
+        purple fades into hot neon pink, then swoops into deep teal blues with patches of orange, yellow, and lime green
+        flowing through and highlighting the lace pattern. Beautiful to start, this gown features an illusion keyhole
+        open back, removable padding, a lightweight build, and stunning scalloped edge lace.</p>
+      <hr>
+      <p class="l">Features:<br><br>• Bold Lace<br><br>• Lightweight<br><br>• Keyhole Back</p>
+    </div>
+
+    <div class="imageText">
+      <h1>Fairy Dust</h1>
+      <p><i>Bust 41” Waist 33” Hip 44” Waist to Floor 45”</i></p>
+      <hr>
+      <p>Once she saw that glitter pattern, Taylor knew she wanted to do another gown for her Prism collection. This one
+        was inspired by the light fairytale feeling of fairy dust transforming and swirling around. It’s the
+        lighthearted sister to the Enchanted dress. This is an airy gown with a fun leg slit. Beautiful illusion button
+        back, Illusion deep vee neck, light removable padding, and boning for structure. Originally a Rebecca Ingram
+        gown, size 14. Jewels have been added on the Illusion tulle, rhinestone buttons, and all the swirling color.</p>
+      <hr>
+      <p class="l">Features:<br><br>• Hidden Rainbows<br><br>• Glittery and Light<br><br>• Rhinestone Button Back</p>
+    </div>
+
+    <div class="imageText">
+      <h1>Nova</h1>
+      <p><i>Bust 43” Waist 35” Hip 46” Waist to Floor 48”</i></p>
+      <hr>
+      <p>This dress is silvery baby blue that features a vertical ombre coloring that touches the waist. Covered in
+        glitter and jewels from the start, Taylor coloured this dress in teal, deep blue, purple, and magenta tones like
+        a bright star in the galaxy. The teal reaches the highest on the back right side, and the colour swoops down to
+        magenta with a subtle cloudy swirl.</p>
+      <hr>
+      <p class="l">Features:<br><br>• Glitter and Jewels<br><br>• Illusion Lace Top<br><br>• Full Princess
+        Shape<br><br>• Asymmetrical Colouring</p>
+    </div>
+
+    <div class="imageText">
+      <h1>Wander</h1>
+      <p><i>Bust 41” Waist 34” Hip 45” Waist to Floor 47”</i></p>
+      <hr>
+      <p>These photos do not do this dress justice; it is STUNNING. All the right hits of vintage boho flair on a
+        well-made gown. This is an Abella by Allure E106 gown in a champagne cream tone that fades into a coloring of
+        peach, muted pink, and purple, then a vibrant teal. The back lace is see-through, what we call an illusion lace
+        back. Taylor's favorite part of this gown, is the massive train. The layers are so lush and full that you
+        instantly feel like a princess in this dress with miles of fabric to play in.</p>
+      <hr>
+      <p class="l">Features:<br><br>• Built-In Cups<br><br>• Corset Structure<br><br>• Button Back<br><br>• Hidden
+        Zipper<br><br>• Massive Train</p>
+    </div>
+
+    <div class="imageText">
+      <h1>Dusk</h1>
+      <p><i>Bust 43” Waist 35” Hip 46” Waist to Floor 47”</i></p>
+      <hr>
+      <p>The colouring of this dress was inspired by what Taylor calls "cotton-candy clouds at dusk", and funny enough,
+        this dress at dusk is just so dreamy. The colours blend so smoothly. It’s a timeless dress with a playful but
+        romantic coloring. This is a Rebecca Ingram gown called Summer in a rose cream tone that fades into Taylor's
+        coloring of pink, muted purple, and then a vibrant, rich blue.</p>
+      <hr>
+      <p class="l">Features:<br><br>• Built-In Cups<br><br>• Corset Structure<br><br>• Waist Clincher<br><br>• Button
+        Back<br><br>• Hidden Zipper</p>
+    </div>
+
+    <div class="imageText">
+      <h1>Depths</h1>
+      <p><i>Bust 46” Waist 38” Hip 47” Waist to Floor 46"</i></p>
+      <hr>
+      <p>Depths has a muted dark combo of colors, from a vintage yellow into teals, a rich aqua, deep blue, and then
+        dark plum.</p>
+      <hr>
+      <p class="l">Features:<br><br>• Unique Lace with Beadwork<br><br>• Off-White Lace with Almond
+        Lining<br><br>• Built-In Waist Clincher<br><br>• Fully Structured Bodice<br><br>• Original 13111 Pippin Wtoo
+        Watters</p>
+    </div>
+
+    <div class="imageText">
+      <h1>Borealis</h1>
+      <p><i>Bust 38” Waist 30” Hip 41” Waist to Floor 46”</i></p>
+      <hr>
+      <p>When restoring this Casablanca Bridal Designer gown, Taylor was instantly inspired to accent the luxurious,
+        sparkly jeweled bodice with the colours of the aurora borealis swirling around the cascading layers of tulle.
+        She pictured the night sky, stars, and the northern lights in one stunning, glamorous, modern bridal gown.</p>
+      <hr>
+      <p class="l">Features:<br><br>• Mermaid Shape<br><br>• Illusion Back<br><br>• Sweetheart Neckline<br><br>• Pearl
+        Button Closure<br><br>• Built-In Boning and Cups</p>
+    </div>
+
+    <div class="imageText">
+      <h1>Sunset Switch</h1>
+      <p><i>Bust 41” Waist 32” Hip 44” Waist to Floor 50”</i></p>
+      <hr>
+      <p>This dress has been 100% manufactured and handcrafted in the USA.
+        The original designer, Jude Jowilson, created all their gowns this way. New, this dress would have sold for
+        around $4000 without colouring. This is a very high-quality gown Taylor acquired in perfect condition and
+        coloured in her classic and signature sunset coloring. What she loves about this gown is its very unique ability
+        to switch from a full bridal gown into a mini dress just by un-snapping the skirt portion.</p>
+      <hr>
+      <p class="l">Features:<br><br>• Built-In Cups<br><br>• Boning<br><br>• Inner Waistband<br><br>• Hidden Zipper</p>
+    </div>
+
+    <div class="imageText">
+      <h1>Enchantment</h1>
+      <p><i>Bust 37.5” Waist 29” Hip 40” Waist to Floor 46”</i></p>
+      <hr>
+      <p>This dress instantly gives royal vibes; its base is a cream color with gold highlights woven into the bold lace
+        pattern. Taylor pictured herself running through an abandoned castle in the woods. Fantasy and fairytales
+        inspired this magical colouring, swirling metallic blue and purple, with a touch of pink, copper, and gold
+        accents. The colours dance around, sparking like a spell has just been cast.</p>
+      <hr>
+      <p class="l">Features:<br><br>• Long Sleeves<br><br>• Illusion Lace Neckline<br><br>• Built-In Cups and
+        Boning<br><br>• Button Closure with Zipper<br><br>Gold Flakes and Glitter Accents</p>
+    </div>
+
+    <div class="imageText">
+      <h1>Evelyn</h1>
+      <p><i>Bust 41” Waist 33” Hip 43.5” Waist to Floor 46”</i></p>
+      <hr>
+      <p>Evelyn has a double ombre; the top lace is a hand-painted watercolour style in pastel pinks, purples, and blues
+        that darken as it goes down the gown. Behind this layer follows a blue ombre that fades softly into deep navy
+        blue.</p>
+      <hr>
+      <p class="l">Features:<br><br>• Hand Painted Florals<br><br>• Ivory Lace on Cream Lining<br><br>• Semi-Translucent
+        Top<br><br>• Illusion Low Back<br><br>Beaded Straps<br><br>• Hidden Zipper<br><br>• Lightly Structured
+        Bodice<br><br>• Removeable Bra Padding</p>
+    </div>
+  </div>
+
+  <br><br>
+  <!-- Flickity carousel HTML for the second carousels images -->
+  <div class="carousel-duplicate">
+
+    <div class="carousel-cell">
+      <img
+        src="https://images.squarespace-cdn.com/content/v1/5f8a41989cd0a72ebbacf86a/1663689055544-WEAQT3YS78FVF28FV4GA/nova-galaxy-dress-bride-blue-peacock-space-wedding.jpg"
+        alt="Nova" onclick="currentSlide(9, this)" />
+    </div>
+
+    <div class="carousel-cell">
+      <img
+        src="https://images.squarespace-cdn.com/content/v1/5f8a41989cd0a72ebbacf86a/1653178905195-SSHDCSGX763JLQARBC4J/ombre-sunset-wedding-dress-taylorannart-dip-dye-boho-bride.jpg"
+        alt="Wander" onclick="currentSlide(10, this)" />
+    </div>
+
+    <div class="carousel-cell">
+      <img
+        src="https://images.squarespace-cdn.com/content/v1/5f8a41989cd0a72ebbacf86a/1654553789117-NEKVS8VXPPH42DZ8IG70/ombre-blue-pink-lace-strapless-sweetheart-wedding-dress.jpg"
+        alt="Dusk" onclick="currentSlide(11, this)" />
+    </div>
+
+    <div class="carousel-cell">
+      <img
+        src="https://images.squarespace-cdn.com/content/v1/5f8a41989cd0a72ebbacf86a/1711222706023-P0F4Y7SOS7UK5PULBSA1/depths-ombre-wedding-gown-boho-canvas-bridal-peacock.jpg"
+        alt="Depths" onclick="currentSlide(12, this)" />
+    </div>
+
+    <div class="carousel-cell">
+      <img
+        src="https://images.squarespace-cdn.com/content/v1/5f8a41989cd0a72ebbacf86a/1622846225613-5YMD9HHAUSTYD3ISTTVB/northern-lights-wedding-dress-dip-dye-ocean-bridal.jpg"
+        alt="Borealis" onclick="currentSlide(13, this)" />
+    </div>
+
+    <div class="carousel-cell">
+      <img
+        src="https://images.squarespace-cdn.com/content/v1/5f8a41989cd0a72ebbacf86a/1647546234550-MJO58B6KOKZ2E96I1EP9/sunset-detachable-skirt-transforming-dress-colorful-wedding.jpg"
+        alt="Sunset Switch" onclick="currentSlide(14, this)" />
+    </div>
+
+    <div class="carousel-cell">
+      <img
+        src="https://images.squarespace-cdn.com/content/v1/5f8a41989cd0a72ebbacf86a/1677027006099-WCVR21XVHBTDCBGWMIV8/dream-wedding-dress-colorful-dark-rainbow-ombre.jpg"
+        alt="Enchantment" onclick="currentSlide(15, this)" />
+    </div>
+
+    <div class="carousel-cell">
+      <img
+        src="https://images.squarespace-cdn.com/content/v1/5f8a41989cd0a72ebbacf86a/1706322048382-S4XV23HO1OE9SM6Y8H08/blue-ombre-wedding-gown-evelyn-canvas-bridal.jpg"
+        alt="Evelyn" onclick="currentSlide(16, this)" />
+    </div>
+  </div>
+
+  <!-- Hidden carousel formatting -->
+  <div class="carousel-hidden">
+
+    <div class="carousel-cell">
+      <img src="" />
+    </div>
+  </div>
+
+  <!-- Footer using Font Awesome Font and Icon Toolkit (references are in head section) -->
+  <footer>
+    <div>
+      <a href="https://www.instagram.com/ashleyo.332/"><i class="social-icon fab fa-instagram"></i></a>
+      <a href="https://discord.com/users/289062133545566208"><i class="social-icon fab fa-discord"></i></a>
+      <a href="mailto:ashley@obsieger.ca"><i class="social-icon fas fa-envelope"></i></a>
+      <p>2024<br>A. Obsieger</p>
+    </div>
+  </footer>
+
+  <!-- Flickity JavaScript summons -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <!-- Custom js -->
+  <script src="script.js" charset="utf-8"></script>
+
+</body>
+
+</html>
